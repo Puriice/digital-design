@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+html {
+  background: rgb(53, 56, 66);
+  position: relative;
+  overflow: scroll;
+}
+body {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  display: block;
+  width: 2480px;
+  height: 3508px;
+  transform-origin: top left;
+  transform: scale(0.2) translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 40px 40px 96px -10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.portfolio-bg {
+  width: 75%;
+  height: 100%;
+  background: #000;
+
+  position: absolute;
+  /* left: 50%;
+    transform: translateX(-50%) */
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.bg-text {
+  -webkit-text-stroke: 3px rgb(65, 65, 65);
+
+  font-size: 350px;
+  line-height: calc(3508px / 6);
+
+  position: relative;
+  left: -3rem;
+  /* word-break: break-all; */
+}
+.bg-text:nth-last-of-type(even) {
+  letter-spacing: 2.5rem;
+}
+.bg-text:nth-last-of-type(odd) {
+  font-size: 300px;
+  left: -7rem;
+}
+.left-box {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  background: #fff;
+}
+.portfolio-text {
+  transform-origin: top left;
+  /* transform-origin: center; */
+  transform: rotate(-90deg) translateY(-50%);
+  font-size: 320px;
+  /* line-height: calc(2480px * 0.15); */
+  position: absolute;
+  left: 50%;
+  /* left: calc(2480px * 0.2); */
+  bottom: -20rem;
+  /* color:yellow; */
+}
+.major {
+  position: absolute;
+  z-index: 6;
+  top: 5rem;
+  left: 50%;
+  font-size: 5rem;
+  transform: translateX(-50%);
+}
+.qrcode {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 50%;
+
+  /* transform-origin:center; */
+  transform: translateX(-50%);
+}
+.bg-l2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.photo-columm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: skew(15deg);
+}
+.photo-container {
+  position: relative;
+  background: #fff;
+  width: 500px;
+  height: 600px;
+  right: -15rem;
+}
+.photo {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  height: 450px;
+}
+.myname-c {
+  position: absolute;
+  right: 0;
+  bottom: 60rem;
+  z-index: 2;
+
+  display: block;
+  width: 70%;
+  height: 300px;
+  overflow: hidden;
+}
+.myname {
+  display: block;
+  width: 100%;
+  line-height: 300px;
+  text-align: center;
+  font-size: 8rem;
+  background: #ffffff;
+  transform: skew(15deg) translateX(8rem);
+  box-shadow: -11px 33px 59px -20px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -11px 33px 59px -20px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -11px 33px 59px -20px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    transform: scale(0.12) translate(-50%, -50%);
+  }
+}
