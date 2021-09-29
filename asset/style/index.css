@@ -158,3 +158,13 @@ body {
     transform: scale(0.12) translate(-50%, -50%);
   }
 }
+
+@media only print {
+  html {
+    background: none;
+  }
+  body {
+    transform: scale(0.318) translate(-50%, -50%);
+    box-shadow: none;
+  }
+}
